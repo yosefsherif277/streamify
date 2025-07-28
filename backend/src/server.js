@@ -21,6 +21,7 @@ app.use(
     credentials: true, // allow frontend to send cookies
   })
 );
+console.log("Origin frontend URL is: ", process.env.FRONTEND_URL);
 
 app.use(express.json());
 app.use(cookieParser());
